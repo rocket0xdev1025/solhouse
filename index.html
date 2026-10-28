@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solana House ($SOLHOUSE) | The Official Residence of Solana Degens</title>
+<meta name="description" content="$SOLHOUSE: the parody residence of Solana degens. A pump.fun meme coin. Executive Orders, Lawn Parties, Open House.">
+<meta name="theme-color" content="#0b0620">
+<!-- og:url / og:image use a placeholder domain: replace https://solhouse.example with the real domain at launch -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solana House ($SOLHOUSE)">
+<meta property="og:description" content="The official residence of Solana degens. Parody meme coin launching on pump.fun.">
+<meta property="og:url" content="https://solhouse.example/">
+<meta property="og:image" content="https://solhouse.example/assets/img/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solana House ($SOLHOUSE)">
+<meta name="twitter:image" content="https://solhouse.example/assets/img/og.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cinzel-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/layer-house.webp" as="image">
+<script>document.documentElement.classList.replace('no-js','js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('rm');</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="solg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14F195"/><stop offset=".55" stop-color="#4fb3d9"/><stop offset="1" stop-color="#9945FF"/></linearGradient>
+    <linearGradient id="solgv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14F195"/><stop offset="1" stop-color="#9945FF"/></linearGradient>
+    <symbol id="logo-svg" viewBox="120 90 360 400">
+      <g class="lg-roof"><polygon points="132,250 300,104 468,250" fill="url(#solgv)"/><rect x="383" y="143" width="45" height="72" rx="4" fill="#16e8a0"/></g>
+      <polygon class="lg-bar lg-b1" points="162,276 452,276 452,330 134,330" fill="url(#solg)"/>
+      <polygon class="lg-bar lg-b2" points="134,350 452,350 452,402 162,402" fill="url(#solg)"/>
+      <polygon class="lg-bar lg-b3" points="180,424 452,424 416,476 134,476" fill="url(#solg)" opacity=".95"/>
+      <rect class="lg-door" x="350" y="314" width="62" height="58" rx="4" fill="#06041a" stroke="url(#solg)" stroke-width="4"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 9h10v12H9zM5 15V3h10"/></symbol>
+  </defs>
+</svg>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="pl-seal"><span class="ring r1"></span><span class="ring r2"></span>
+    <svg class="pl-logo" viewBox="120 90 360 400"><use href="#logo-svg"/></svg></div>
+  <div class="pl-count mono"><span id="plNum">000</span><i>/100</i></div>
+  <p class="pl-cap mono">Unlocking the residence</p>
+</div>
+
+<canvas id="sky" aria-hidden="true"></canvas>
+<div id="cursor" aria-hidden="true"><i></i></div>
+
+<!-- NAV -->
+<header id="nav" class="nav">
+  <a href="#top" class="brand" aria-label="Solana House home"><img src="assets/img/logo-256.webp" alt="" width="34" height="34"><span class="serif">Solana House</span></a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#address">Address</a><a href="#moving">Moving In</a><a href="#orders">Orders</a><a href="#oval">Oval Office</a><a href="#buy">How to Buy</a>
+  </nav>
+  <div class="nav-cta">
+    <button class="btn-ghost sm" data-copy-ca type="button"><svg width="14" height="14"><use href="#i-copy"/></svg><span>Copy CA</span></button>
+    <a class="btn-buy sm" data-link="buy" href="#" target="_blank" rel="noopener"><img src="assets/brand/pumpfun.png" alt="pump.fun" width="18" height="18">Buy</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-stage">
+    <div class="layer l-sky" style="background-image:url(assets/img/layer-sky.webp)"></div>
+    <div class="stars" aria-hidden="true"></div>
+    <div class="searchlights" aria-hidden="true"><i class="sl sl1"></i><i class="sl sl2"></i><i class="sl sl3"></i></div>
+    <div class="ghost-word serif" aria-hidden="true">HOUSE</div>
+    <img class="layer l-house" src="assets/img/layer-house.webp" alt="The Solana House: a white mansion at night with the Solana house logo on its front, a Solana flag on the roof, and a glowing fountain on the lawn" width="2448" height="816">
+    <img class="layer l-fg" src="assets/img/layer-fg.webp" alt="" width="2448" height="816">
+    <div class="hero-shade"></div>
+  </div>
+  <div class="hero-copy">
+    <p class="kicker mono"><img src="assets/brand/solana.svg" alt="Solana" width="16" height="13"> Est. on Solana &middot; pump.fun launch</p>
+    <h1 class="title serif" aria-label="Solana House"><span class="split">SOLANA</span> <span class="split grad">HOUSE</span></h1>
+    <p class="sub"><em class="serif-i">The official residence of Solana degens.</em> Keys are cheap, the lawn is open, and the lights never go off.</p>
+    <div class="hero-cta">
+      <a class="btn-buy" data-link="buy" href="#" target="_blank" rel="noopener"><img src="assets/brand/pumpfun.png" alt="pump.fun logo" width="22" height="22">Buy $SOLHOUSE</a>
+      <a class="btn-ghost" data-link="chart" href="#" target="_blank" rel="noopener"><img src="assets/brand/dexscreener.png" alt="DexScreener logo" width="18" height="18">Chart</a>
+    </div>
+    <div class="ca-mini mono"><span>CA</span><code data-ca>TBA</code><button type="button" data-copy-ca aria-label="Copy contract address"><svg width="14" height="14"><use href="#i-copy"/></svg></button></div>
+  </div>
+  <div class="scroll-hint mono" aria-hidden="true">Scroll to enter</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="ribbon" aria-hidden="true"><div class="ribbon-track mono">
+  <span>$SOLHOUSE</span><b>&#9670;</b><span>Open House</span><b>&#9670;</b><span>Executive Order No. 1: Hold</span><b>&#9670;</b><span>Lawn Party Tonight</span><b>&#9670;</b><span>Welcome Home, Degen</span><b>&#9670;</b><span>The Lights Stay On</span><b>&#9670;</b>
+  <span>$SOLHOUSE</span><b>&#9670;</b><span>Open House</span><b>&#9670;</b><span>Executive Order No. 1: Hold</span><b>&#9670;</b><span>Lawn Party Tonight</span><b>&#9670;</b><span>Welcome Home, Degen</span><b>&#9670;</b><span>The Lights Stay On</span><b>&#9670;</b>
+</div></div>
+
+<!-- ADDRESS -->
+<section id="address" class="sec">
+  <div class="wrap grid lg:grid-cols-[1fr_auto] gap-12 items-center">
+    <div>
+      <p class="label mono">I. The State of the Chain Address</p>
+      <h2 class="h2 serif words">My fellow degens, the state of the chain is <span class="grad">strong</span>, fast, and extremely cheap.</h2>
+      <p class="body reveal">Every chain needs a home. Bitcoin got a vault. Ethereum got a cathedral. Solana got a <strong>house</strong>: three bars stacked into floors, a roof dropped on top, and a door that is always unlocked. $SOLHOUSE is the residence where the community lives, parties on the lawn, and signs Executive Orders nobody is required to follow.</p>
+      <p class="body reveal">No cabinet meetings that could have been a tweet. No velvet ropes. Just an Open House, every block, forever.</p>
+    </div>
+    <div class="seal reveal" aria-hidden="true">
+      <svg viewBox="0 0 300 300" class="seal-svg">
+        <defs><path id="sealc" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"/></defs>
+        <circle cx="150" cy="150" r="146" fill="none" stroke="url(#solg)" stroke-width="2"/>
+        <circle cx="150" cy="150" r="136" fill="none" stroke="url(#solg)" stroke-width="1" stroke-dasharray="2 6"/>
+        <circle cx="150" cy="150" r="100" fill="#0d0828" stroke="url(#solg)" stroke-width="2"/>
+        <text class="seal-text"><textPath href="#sealc">SEAL OF THE SOLANA HOUSE &#183; OPEN HOUSE &#183; EST. ON-CHAIN &#183; </textPath></text>
+        <svg x="80" y="72" width="140" height="150" viewBox="120 90 360 400"><use href="#logo-svg"/></svg>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- MOVING IN (signature) -->
+<section id="moving" class="moving">
+  <div class="mv-stage">
+    <div class="mv-head">
+      <p class="label mono">II. Moving In</p>
+      <h2 class="h2 serif">Building the House, <span class="grad">one bar at a time</span></h2>
+    </div>
+    <div class="mv-scene">
+      <svg viewBox="0 0 600 520" class="mv-svg" role="img" aria-label="Animated scene: the three Solana bars stack into floors, the roof drops on, the windows light up and the flag rises">
+        <defs>
+          <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#14F195" stop-opacity=".55"/><stop offset="1" stop-color="#14F195" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="300" cy="490" rx="270" ry="22" fill="#14F195" opacity=".12"/>
+        <rect x="20" y="482" width="560" height="4" rx="2" fill="url(#solg)" opacity=".6"/>
+        <g class="mv-pole"><rect x="296" y="40" width="4" height="0" fill="#cfd3ff" class="mv-polebar"/></g>
+        <g class="mv-flag"><path d="M300 42 h70 l-10 18 l10 18 h-70z" fill="url(#solg)"/><g transform="translate(316 50) scale(.09)"><path fill="#0b0620" d="M64.6 237.9a13 13 0 0 1 9.2-3.8h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7a13 13 0 0 1-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1zM64.6 3.8A13.4 13.4 0 0 1 73.8 0h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7a13 13 0 0 1-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1zM333.1 120.1a13 13 0 0 0-9.2-3.8H6.5c-5.8 0-8.7 7-4.6 11.1l62.7 62.7a13 13 0 0 0 9.2 3.8h317.4c5.8 0 8.7-7 4.6-11.1z"/></g></g>
+        <g class="mv-floor f3"><polygon points="110,400 490,400 460,480 80,480" fill="url(#solg)"/></g>
+        <g class="mv-floor f2"><polygon points="80,310 490,310 490,390 110,390" fill="url(#solg)"/></g>
+        <g class="mv-floor f1"><polygon points="110,220 490,220 490,300 80,300" fill="url(#solg)"/></g>
+        <g class="mv-wins">
+          <rect class="w" x="150" y="240" width="34" height="40" rx="3"/><rect class="w" x="210" y="240" width="34" height="40" rx="3"/><rect class="w" x="270" y="240" width="34" height="40" rx="3"/><rect class="w" x="330" y="240" width="34" height="40" rx="3"/>
+          <rect class="w" x="150" y="330" width="34" height="40" rx="3"/><rect class="w" x="210" y="330" width="34" height="40" rx="3"/><rect class="w" x="270" y="330" width="34" height="40" rx="3"/><rect class="w" x="330" y="330" width="34" height="40" rx="3"/>
+          <rect class="w" x="170" y="420" width="34" height="40" rx="3"/><rect class="w" x="230" y="420" width="34" height="40" rx="3"/><rect class="w" x="290" y="420" width="34" height="40" rx="3"/><rect class="w" x="350" y="420" width="34" height="40" rx="3"/>
+        </g>
+        <rect class="mv-door" x="398" y="262" width="62" height="74" rx="4" fill="#06041a" stroke="#14F195" stroke-width="3"/>
+        <g class="mv-roof"><polygon points="70,206 300,60 530,206" fill="url(#solgv)"/><rect x="420" y="88" width="40" height="70" rx="3" fill="#16e8a0"/></g>
+      </svg>
+      <div class="mv-glow"></div>
+    </div>
+    <div class="mv-side">
+      <ol class="mv-steps mono">
+        <li data-s="0">Floor 1 delivered</li><li data-s="1">Floor 2 stacked</li><li data-s="2">Floor 3 locked in</li><li data-s="3">Roof dropped on</li><li data-s="4">Lights on</li><li data-s="5">Flag raised</li>
+      </ol>
+      <div class="meter"><div class="meter-top mono"><span>Occupancy</span><b id="occ">0%</b></div><div class="meter-bar"><i id="occBar"></i></div></div>
+      <p class="mv-welcome serif">Welcome home, degen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTIVE ORDERS -->
+<section id="orders" class="sec">
+  <div class="wrap">
+    <p class="label mono">III. Executive Orders</p>
+    <h2 class="h2 serif words">Signed in the Oval Office. <span class="grad">Binding on no one.</span></h2>
+    <div class="orders">
+      <article class="order"><div class="o-no mono">E.O. No. 001</div><h3 class="serif">The Door Stays Open</h3><p>The Solana House shall never lock its door. Every wallet is a resident. Every resident gets a key.</p><div class="stamp mono">Enacted</div></article>
+      <article class="order"><div class="o-no mono">E.O. No. 002</div><h3 class="serif">Mandatory Lawn Parties</h3><p>A lawn party is hereby declared every time a green candle prints. Attendance is optional; vibes are not.</p><div class="stamp mono">Enacted</div></article>
+      <article class="order"><div class="o-no mono">E.O. No. 003</div><h3 class="serif">The Lights Stay On</h3><p>Every window remains lit, all night, every night. Fees are too low to justify turning anything off.</p><div class="stamp mono">Enacted</div></article>
+      <article class="order"><div class="o-no mono">E.O. No. 004</div><h3 class="serif">Paper Hands Use the Side Gate</h3><p>Leaving is allowed. Just do it quietly and close the gate behind you. The fountain keeps running.</p><div class="stamp mono">Enacted</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- CABINET -->
+<section id="cabinet" class="sec sec-tight">
+  <div class="wrap">
+    <p class="label mono">IV. The Cabinet</p>
+    <h2 class="h2 serif words">Tokenomics, <span class="grad">pending confirmation</span></h2>
+    <p class="body reveal">The Cabinet has not been sworn in yet. Every figure is announced at launch on pump.fun, and nothing here is final.</p>
+    <ul class="pills reveal">
+      <li><span class="mono">Ticker</span><b>$SOLHOUSE</b></li>
+      <li><span class="mono">Chain</span><b><img src="assets/brand/solana.svg" alt="" width="16" height="13"> Solana</b></li>
+      <li><span class="mono">Launch</span><b>pump.fun</b></li>
+      <li><span class="mono">Supply</span><b>TBA</b></li>
+      <li><span class="mono">Tax</span><b>TBA</b></li>
+      <li><span class="mono">Liquidity</span><b>TBA</b></li>
+      <li><span class="mono">Contract</span><b data-ca>TBA</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- OVAL OFFICE -->
+<section id="oval" class="sec">
+  <div class="wrap">
+    <p class="label mono">V. The Oval Office</p>
+    <h2 class="h2 serif words">The keys to the house</h2>
+    <div class="oval-grid">
+      <div class="doc ca-box reveal">
+        <p class="mono doc-k">Official contract address</p>
+        <div class="ca-row"><code id="caText" data-ca class="mono">TBA</code>
+          <button type="button" class="btn-buy sm" data-copy-ca><svg width="14" height="14"><use href="#i-copy"/></svg><span class="copy-lbl">Copy</span></button></div>
+        <p class="warn">Only trust the CA published here and on official channels. The House will never DM you, ask for your seed phrase, or run a giveaway.</p>
+        <div class="row-btns">
+          <a class="btn-buy" data-link="buy" href="#" target="_blank" rel="noopener"><img src="assets/brand/pumpfun.png" alt="pump.fun logo" width="20" height="20">Buy Now</a>
+          <a class="btn-ghost" data-link="chart" href="#" target="_blank" rel="noopener"><img src="assets/brand/dexscreener.png" alt="DexScreener logo" width="18" height="18">DexScreener</a>
+        </div>
+        <div class="row-btns socials">
+          <a class="btn-ghost soc" data-link="x" href="#" aria-disabled="true"><svg width="16" height="16"><use href="#i-x"/></svg>X <small>Soon</small></a>
+          <a class="btn-ghost soc" data-link="tg" href="#" aria-disabled="true"><svg width="16" height="16"><use href="#i-tg"/></svg>Telegram <small>Soon</small></a>
+        </div>
+      </div>
+      <div class="chart reveal">
+        <div id="chartMount"></div>
+        <div class="chart-over" id="chartOver">
+          <svg viewBox="120 90 360 400" width="70" height="78" aria-hidden="true"><use href="#logo-svg"/></svg>
+          <p class="serif">Chart unveiled at launch</p>
+          <p class="mono small">The ribbon gets cut when the CA goes live.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO BUY -->
+<section id="buy" class="sec">
+  <div class="wrap">
+    <p class="label mono">VI. Moving Instructions</p>
+    <h2 class="h2 serif words">How to buy <span class="grad">$SOLHOUSE</span> on Solana</h2>
+    <ol class="steps">
+      <li class="step reveal"><svg viewBox="0 0 48 48" class="si"><rect x="6" y="12" width="36" height="26" rx="5" fill="none" stroke="url(#solg)" stroke-width="3"/><path d="M30 25h12" stroke="url(#solg)" stroke-width="3"/><circle cx="33" cy="25" r="2.5" fill="#14F195"/><path d="M10 12l20-6 3 6" fill="none" stroke="url(#solg)" stroke-width="3"/></svg><span class="mono">Step 01</span><h3 class="serif">Get a wallet</h3><p>Install Phantom or Solflare from the official site or app store. Save your seed phrase offline.</p></li>
+      <li class="step reveal"><svg viewBox="0 0 48 48" class="si"><circle cx="24" cy="24" r="17" fill="none" stroke="url(#solg)" stroke-width="3"/><g transform="translate(14 17) scale(.05)"><path fill="url(#solg)" d="M64.6 237.9a13 13 0 0 1 9.2-3.8h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7a13 13 0 0 1-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1zM64.6 3.8A13.4 13.4 0 0 1 73.8 0h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7a13 13 0 0 1-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1zM333.1 120.1a13 13 0 0 0-9.2-3.8H6.5c-5.8 0-8.7 7-4.6 11.1l62.7 62.7a13 13 0 0 0 9.2 3.8h317.4c5.8 0 8.7-7 4.6-11.1z"/></g></svg><span class="mono">Step 02</span><h3 class="serif">Load up SOL</h3><p>Buy SOL on an exchange or in your wallet, then send it to your Solana wallet address.</p></li>
+      <li class="step reveal"><svg viewBox="0 0 48 48" class="si"><path d="M8 22L24 8l16 14v18H8z" fill="none" stroke="url(#solg)" stroke-width="3" stroke-linejoin="round"/><rect x="20" y="28" width="8" height="12" fill="#14F195"/></svg><span class="mono">Step 03</span><h3 class="serif">Open the door</h3><p>Hit Buy Now to open pump.fun, connect your wallet and paste the official $SOLHOUSE CA.</p></li>
+      <li class="step reveal"><svg viewBox="0 0 48 48" class="si"><path d="M10 18h26l-6-6M38 30H12l6 6" fill="none" stroke="url(#solg)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="mono">Step 04</span><h3 class="serif">Move in</h3><p>Swap SOL for $SOLHOUSE, confirm in your wallet, and pick a room. You live here now.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="tour" class="tour">
+  <div class="tour-pin">
+    <div class="tour-head wrap"><p class="label mono">VII. The Grand Tour</p><h2 class="h2 serif">Rooms of the residence</h2></div>
+    <div class="tour-track">
+      <figure class="room"><img src="assets/img/g-front.webp" alt="The front of the Solana House with the glowing house logo" loading="lazy"><figcaption><b class="serif">The Front Porch</b><span class="mono">Logo lit, door open</span></figcaption></figure>
+      <figure class="room"><img src="assets/img/g-flag.webp" alt="The Solana flag flying above the roof" loading="lazy"><figcaption><b class="serif">The Flagpole</b><span class="mono">Raised every block</span></figcaption></figure>
+      <figure class="room"><img src="assets/img/g-fountain.webp" alt="The glowing fountain on the front lawn" loading="lazy"><figcaption><b class="serif">The Fountain</b><span class="mono">Liquidity, decorative</span></figcaption></figure>
+      <figure class="room"><img src="assets/img/g-wing.webp" alt="The teal-lit east wing of the mansion" loading="lazy"><figcaption><b class="serif">The Teal Wing</b><span class="mono">Holders only (everyone)</span></figcaption></figure>
+      <figure class="room room-logo"><img src="assets/img/logo.webp" alt="The Solana House logo" loading="lazy"><figcaption><b class="serif">The Seal</b><span class="mono">Three bars, one roof</span></figcaption></figure>
+      <figure class="room"><img src="assets/img/g-sky.webp" alt="The starry purple night sky over the lawn" loading="lazy"><figcaption><b class="serif">The Night Sky</b><span class="mono">Lawn party forecast</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSER -->
+<section id="open-house" class="closer">
+  <img src="assets/img/banner.webp" srcset="assets/img/banner-1224.webp 1224w, assets/img/banner.webp 2448w" sizes="100vw" alt="The Solana House lit up at night under a starry purple sky" loading="lazy" class="closer-img">
+  <div class="closer-shade"></div>
+  <div class="closer-copy">
+    <p class="label mono">Open House</p>
+    <h2 class="h1 serif words">The door is open. <span class="grad">Join us.</span></h2>
+    <div class="hero-cta center">
+      <a class="btn-buy" data-link="buy" href="#" target="_blank" rel="noopener"><img src="assets/brand/pumpfun.png" alt="pump.fun logo" width="22" height="22">Buy $SOLHOUSE</a>
+      <a class="btn-ghost soc" data-link="x" href="#" aria-disabled="true"><svg width="16" height="16"><use href="#i-x"/></svg>X <small>Soon</small></a>
+      <a class="btn-ghost soc" data-link="tg" href="#" aria-disabled="true"><svg width="16" height="16"><use href="#i-tg"/></svg>Telegram <small>Soon</small></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top"><a href="#top" class="brand"><img src="assets/img/logo-256.webp" alt="Solana House logo" width="40" height="40"><span class="serif">Solana House</span></a><span class="mono">$SOLHOUSE &middot; on <img src="assets/brand/solana.svg" alt="Solana" width="14" height="11"> Solana</span></div>
+    <p class="disc">$SOLHOUSE is a meme coin and a parody created for entertainment. It is not affiliated with, endorsed by, or connected to the Solana Foundation, the U.S. government, any government body, or any company. "Executive Orders", "Cabinet" and "Oval Office" are jokes, not official acts. The token has no intrinsic value and no expectation of financial return. Nothing on this site is financial advice. Crypto is volatile; only spend what you can afford to lose. DYOR.</p>
+    <p class="mono small">&copy; 2026 Solana House. Parody. All residents welcome.</p>
+  </div>
+</footer>
+
+<div class="mbar"><button type="button" class="btn-ghost sm" data-copy-ca><svg width="14" height="14"><use href="#i-copy"/></svg>Copy CA</button><a class="btn-buy sm" data-link="buy" href="#" target="_blank" rel="noopener"><img src="assets/brand/pumpfun.png" alt="pump.fun logo" width="18" height="18">Buy $SOLHOUSE</a></div>
+<div id="toast" class="toast mono" role="status" aria-live="polite"></div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
